@@ -1,0 +1,379 @@
+body {
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+header {
+  z-index: 1;
+  width: 100%;
+  height: 100px;
+  background-color: #6797a0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid white;
+  opacity: 60%;
+}
+
+header .logo {
+  width: 100%;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+header .header-link {
+  font-weight: 500;
+  height: 100%;
+  color: #ffee00;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+}
+
+header .header-link.active {
+  color: red;
+}
+
+header .header-link:hover {
+  color: red;
+}
+
+header .basket {
+  font-size: 40px;
+  color: red;
+  cursor: pointer;
+}
+
+header .basket:hover {
+  color: black;
+}
+
+header .basket-count {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  color: red;
+}
+
+main section.home {
+  height: 100vh;
+  padding-top: 250px;
+  padding-left: 100px;
+  background: url(https://nariatravel.gr/wp-content/uploads/2017/09/evening-travel-wallpaper-hd-download-free-background-images-amazing-high-definition-4k-2560x1600.jpg) center no-repeat;
+  background-size: cover;
+}
+
+main section.home .title {
+  color: white;
+  width: 50%;
+  font-weight: 700;
+}
+
+main section.travel .form {
+  width: 70%;
+  background-color: skyblue;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  padding: 50px;
+  position: relative;
+  left: 50%;
+}
+
+main section.travel .form .form-icon {
+  font-size: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flights {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.count {
+  width: 100px;
+}
+
+.location {
+  width: 300px;
+}
+
+.second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.search {
+  display: block;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-right: 40px;
+  height: 60px;
+  width: 150px;
+  background-color: #72f508;
+  border: red solid 1px;
+  -webkit-transition: background-color 0.3s, -webkit-box-shadow 1s linear;
+  transition: background-color 0.3s, -webkit-box-shadow 1s linear;
+  transition: box-shadow 1s linear, background-color 0.3s;
+  transition: box-shadow 1s linear, background-color 0.3s, -webkit-box-shadow 1s linear;
+}
+
+.search:hover {
+  -webkit-box-shadow: 0 0 10px 0px;
+          box-shadow: 0 0 10px 0px;
+}
+
+.search:active {
+  border-width: 5px;
+}
+
+.packets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.packets .tours-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 50px;
+  color: aqua;
+}
+
+.packets h6 {
+  font-size: 15px;
+}
+
+.row-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+  margin-top: 50px;
+}
+
+.row-1 img {
+  width: 450px;
+  height: 400px;
+}
+
+.row-1 .img-scale:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  cursor: pointer;
+}
+
+.row-1 .country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.row-1 .country h4 {
+  position: absolute;
+  color: #fff700;
+  bottom: 160px;
+  cursor: pointer;
+}
+
+.row-1 .country h4:hover {
+  color: red;
+}
+
+.title-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 50px;
+}
+
+.title-1 h1 {
+  color: blue;
+}
+
+.carts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 300px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 35px;
+  margin-top: 50px;
+  background-color: aquamarine;
+}
+
+.carts .cart {
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 20px 0;
+          box-shadow: 0 0 20px 0;
+  padding: 0 10px;
+}
+
+.carts .cart.active .cart-button {
+  background-color: #f09090;
+}
+
+.carts span {
+  width: auto;
+  display: block;
+}
+
+.carts .cart:hover {
+  -webkit-box-shadow: 0 0 20px 0 red;
+          box-shadow: 0 0 20px 0 red;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  cursor: pointer;
+}
+
+.carts .cart:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.carts img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carts .cart-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carts cart-button {
+  border-radius: 10px;
+}
+
+.carts .cart-button:hover {
+  background-color: #f09090;
+}
+
+.carts .stars {
+  color: yellow;
+}
+
+.join-us {
+  margin-top: 50px;
+  height: 500px;
+  background-image: url(https://www.candorblog.com/wp-content/uploads/2017/05/travel-022.jpg);
+  background-position: center;
+}
+
+.join-us .input {
+  width: 50%;
+  height: 50px;
+  background-color: aliceblue;
+  padding: 0 10px;
+  border-radius: 100px;
+}
+
+.join-us .own-input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.join-us .subscribe {
+  border-radius: 100px;
+  border: none;
+  height: 80%;
+  background-color: aqua;
+}
+
+.join-us .subscribe:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.join-us h6 {
+  color: black;
+}
+
+.icons {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.icons .fb:hover {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  color: blue;
+}
+
+.icons .insta:hover {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  color: red;
+}
+
+.icons .twit:hover {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  color: aqua;
+}
+/*# sourceMappingURL=style.css.map */
